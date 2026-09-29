@@ -44,4 +44,22 @@ html {
   .design-grid {
     grid-template-columns: 1fr;
   }
+}input[type="file"] {
+  border: 2px solid #176b4d;
+  border-radius: 14px;
+  padding: 12px;
+  background: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  background: #176b4d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-right: 12px;
+  font-weight: 700;
+  cursor: pointer;
 }

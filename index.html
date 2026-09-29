@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qazaq Ornament AI</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Qazaq Ornament AI</h1>
+    <p class="subtitle">
+      Қазақтың ұлттық ою-өрнектерін жасанды интеллект арқылы таны
+    </p>
+
+    <section class="upload-box">
+      <div class="star">✦</div>
+
+      <h2>Ою суретін жүктеңіз</h2>
+
+      <p>Қошқармүйіз • Түйетабан • Тұмарша</p>
+
+      <label class="upload-button">
+        Суретті таңдау
+        <input
+          type="file"
+          id="imageUpload"
+          accept="image/*"
+          hidden
+        >
+      </label>
+
+      <img
+        id="preview"
+        alt="Жүктелген ою суреті"
+        style="display:none;"
+      >
+    </section>
+
+    <section id="result" class="result" style="display:none;">
+
+      <p class="small-title">Жасанды интеллект нәтижесі</p>
+
+      <h2 id="ornamentName"></h2>
+
+      <h3 id="confidence"></h3>
+
+      <p id="description"></p>
+
+      <p id="designIdea"></p>
+
+    </section>
+<section id="visualIdeas" class="visual-ideas" style="display:none;">
+  <h2>✨ Дизайн идеялары</h2>
+  <p>Танылған оюды заманауи дизайнда қолдану үлгілері:</p>
+
+  <img id="designMockup"
+       src=https://i.postimg.cc/kGYWDTkY/Izobrazenie-Chat-GPT-29-sent-2026-g-02-55-03.png
+       alt="Ою-өрнектің заманауи дизайн үлгілері"
+       style="width:100%; border-radius:18px; margin-top:15px;">
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html> 
+ 
+  
